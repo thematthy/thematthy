@@ -1,51 +1,56 @@
 <html>
- 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.container {
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  text-align: center;
-  color: white;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://cdn.shopify.com/s/files/1/0056/1345/3402/files/dawn-evening-gradation-1544880.jpg?2769");
+  height: 100%;
 }
 
-.bottom-left {
+.caption {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-.centered {
-  position: absolute;
+  left: 0;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px;
+  color: #111;
 }
 </style>
+</head>
+<body>
 
-<div class="container">
-  <img src="https://cdn.shopify.com/s/files/1/0056/1345/3402/files/dawn-evening-gradation-1544880.jpg?2769" style="width:100%;">
-  
-  <div class="centered">
-
+<div class="bgimg-1">
+  <div class="caption">
 <center><STYLE>A {text-decoration: none;} </STYLE>
       <img src="https://cdn.shopify.com/s/files/1/0056/1345/3402/files/155872024379677814.png?2767" width="204" height="77">
     <div>
@@ -54,10 +59,12 @@
      <br><br><br>
     </div>
     </center>
+    
+  </div>
+</div>
 
-</div>
-</div>
-</head>
+
+</body>
 
 
 
