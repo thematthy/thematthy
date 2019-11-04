@@ -1,0 +1,183 @@
+<style>
+html, body{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+}
+
+.container{
+   margin: 0 auto;
+   position: relative;
+   width: 100%;
+   padding-bottom: 40%;
+}
+
+.slide_img{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+
+.slide_img img{
+   width: 100%;
+   height: 100%;
+}
+
+
+#i1, #i2, #i3{
+   display: none;
+}
+
+.pre, .nxt{
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   top: 45%;
+   z-index: 99;
+   cursor: pointer;
+   border: solid black;
+   border-width: 0 6px 6px 0;
+}
+
+.pre{
+   left: 30px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.nxt{
+   right: 30px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.nav{
+   width: 100%;
+   height: 11px;
+   bottom: 12%;
+   position: absolute;
+   text-align: center;
+   z-index: 99;
+}
+
+.dots{
+   top: 30px;
+   width: 18px;
+   height: 18px;
+   margin: 0 4px;
+   position: relative;
+   border-radius: 50%;
+   display: inline-block;
+   background: rgba(8,8,8, .6);
+}
+
+.slide_img{
+   z-index: -1;
+}
+
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+   z-index: 9;
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+   background: rgba(8,8,8, .3);
+}
+
+</style>
+
+<body>
+
+<div class="container">
+
+  <input type="radio" name="images" id="i1" checked>
+  <input type="radio" name="images" id="i2">
+  <input type="radio" name="images" id="i3">
+
+ <div class="slide_img" id="one">
+  <div style="background-color: white; height: 100%; padding: 10%;">
+
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<br>
+<b> Madison P. </b>
+
+<br>
+<br>
+<p style="text-align: justify;">
+
+It has three strong colors but mix into infinite colors. I put it behind the bed and it looks beautiful. Works correctly. I recommend this product.
+
+</p>
+
+  </div>
+
+    <label for="i3" class="pre"></label>
+    <label for="i2" class="nxt"></label>
+
+ </div>
+
+ <div class="slide_img" id="two">
+  <div style="background-color: white; height: 100%; padding: 10%;">
+
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<br>
+<b> Alvaro M. </b>
+
+<br>
+<br>
+<p style="text-align: justify;">
+
+I bought a second set after this, i love these lights! I honestly thought they would be cheap and break but they are actually very nice. The adhesive sticks, but doesn't rip off any paint off the walls! love these, large variety of color also.
+</p>
+
+  </div>
+    <label for="i1" class="pre"></label>
+    <label for="i3" class="nxt"></label>
+
+ </div>
+
+ <div class="slide_img" id="three">
+  <div style="background-color: white; height: 100%; padding: 10%;">
+
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<span style='font-size:18px;'>&#9733;</span>
+<br>
+<b> Kylieen A. </b>
+
+<br>
+<br>
+<p style="text-align: justify;">
+Fast Delivery. The LED Stripes work perfectly, the Operation via the App is simple. The Stripes are directly operative after Installation in the App, Works with multiple stipes at the same time. The Parts are your Money woth, I would without hesitation buy again.
+</p>
+
+  </div>
+    <label for="i2" class="pre"></label>
+    <label for="i1" class="nxt"></label>
+
+ </div>
+
+  <div class="nav">
+   <label class="dots" id="dot1" for="i1"></label>
+   <label class="dots" id="dot2" for="i2"></label>
+   <label class="dots" id="dot3" for="i3"></label>
+  </div>
+
+</div>
+
+</body>
