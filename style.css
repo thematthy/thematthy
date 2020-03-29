@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+
+
+div#stripes {
+  height: 92%;
+  margin: 4%;
+  width: 92%;
+  background-image: linear-gradient(45deg, white 25%, transparent 25%, transparent 50%, white 50%, white 75%, transparent 75%, #95fcff);
+  background-size: 10px 10px;
+}
+
+body {
+font-family: 'DM Serif Display', serif;
+
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.mze {
+  color: f61c27;
+  font-size: 200;
+
+  }
