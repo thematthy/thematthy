@@ -16,7 +16,7 @@ font-family: 'DM Serif Display', serif;
 .caption {
   position: absolute;
   left: 0;
-  top: 0%;
+  top: 20%;
   width: 100%;
   text-align: center;
   color: #000;
@@ -24,7 +24,7 @@ font-family: 'DM Serif Display', serif;
 
 .mze {
   color: f61c27;
-  font-size: 40vw;
+  font-size: 100px;
 
   }
 
